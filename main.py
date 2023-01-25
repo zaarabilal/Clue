@@ -3,9 +3,10 @@ import random
 
 class Player:
     def __init__(self):
-        print("Welcome to 'Who Was It?'! Players will be given the opportunity to interrogate the suspects and search rooms. Which ever room, weapon, or person that has not been searched/found is the killer.")
+        print("Welcome to 'Who Was It?'! Players will be given the opportunity to interrogate the suspects and search rooms." "\n" "Which ever room, weapon, or person that has not been searched/found is the killer." "\n" "Your suspects are: Mrs. Bob, Mr. Joe, Billy, and Tim" 
+              "\n" "The weapons are a Stick, Keyboard, Shoe, and Door Handle" "\n" "The rooms are the Bathroom, Laundry Room, Bedroom, and Dining Room")
         self.playerList = []
-        self.numPlayers = int(input("How many people are going to be playing"))
+        self.numPlayers = int(input("How many people will be playing?"))
 
         for z in range(self.numPlayers):
             self.playerList.append(input("What is your name?"))
@@ -51,7 +52,7 @@ class GamePlay:
                 murdererguess = input("Who is the murderer?")
                 if murdererguess == self.whowasit["Suspect"]:
                     guesscount = guesscount + 1
-                    print(guesscount)
+
 
                 weaponguess = input("Which weapon did the killer use?")
                 if weaponguess == self.whowasit["Weapons"]:
@@ -71,5 +72,3 @@ class GamePlay:
 
 if __name__ == '__main__':
     GamePlay()
-
-
