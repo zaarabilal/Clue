@@ -17,8 +17,8 @@ class GamePlay:
     def __init__(self):
         z = Player()
         self.list_of_suspects = ["Mrs. Bob", "Mr. Joe", "Billy", "Tim"]
-        self.list_of_weapons = ["stick", "keyboard","shoe", "door handle"]
-        self.list_of_rooms = ["bathroom", "laundry room", "bedroom", "dining room"]
+        self.list_of_weapons = ["Stick", "Keyboard","Shoe", "Door Handle"]
+        self.list_of_rooms = ["Bathroom", "Laundry Room", "Bedroom", "Dining Room"]
 
 
         self.whowasit = {"Suspect" : self.list_of_suspects.pop(random.randrange(0,len(self.list_of_suspects))), "Weapons" : self.list_of_weapons.pop(random.randrange(0,len(self.list_of_weapons))), "Room" : self.list_of_rooms.pop(random.randrange(0,len(self.list_of_rooms)))}
@@ -70,13 +70,6 @@ class GamePlay:
                     z.playerList.pop(z.playerList.__len__() - 1)
 
 
-
-
-#options = input("What do you want to do?" "\n" "type r to enter room" )
-
-        # Here the user is asked to enter the name first
-        #if options == "r":
-            #print("You enter the" + self.roomCopy.peek(random.randrange(0, len(self.list_of_rooms.copy()))))
 
 
 
