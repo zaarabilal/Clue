@@ -33,12 +33,7 @@ class GamePlay:
 
         while z.playerList.__len__() > 0:
             currentPlay = z.playerList.pop(0)
-       # self.murderer = {'Suspect': self.list_of_suspects.pop(random.randrange(0,len(self.list_of_suspects)))}
-        #print(self.murderer)
-        #self.weapon = {'Weapon': self.list_of_weapons.pop(random.randrange(0,len(self.list_of_weapons)))}
-       # print(self.weapon)
-        #self.room = {'Room': self.list_of_rooms.pop(random.randrange(0,len(self.list_of_rooms)))}
-        #print(self.room)
+     
 
             action= input("What do you want to do?" + str(currentPlay) + "\n" "Type room to enter and investigate a room" "\n" "Type i to interrogate a suspect" "\n" "Type guess to guess a suspect")
 
